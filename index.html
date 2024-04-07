@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="d_dentist_logo.jpg">
+    <title>Patient Satisfaction Survey</title>
+ </head>
+ <body>
+  <section class="container">
+    <header class="header" style="text-align: center;"><img src="d_dentist_logo.jpg" width="80px" height="80px">
+      <h1>D' DENTIST PLACE</h1>
+      <h2>Patient Satisfaction Survey</h2><br>
+      <p id="description">Thank you for taking out time to help us improve our clinic services</p>
+    </header>
+     
+    <form id="survey-form">
+      <div class="form-group">
+        <label>Name:<input type="text" class="form-control" id="name-label" placeholder="Enter your name" required /></label>
+      </div>
+      <div class="form-group">
+        <label>Email:<input type="email" class="form-control" id="email-label" placeholder="david@example.com" required /></label>
+      </div>
+      <div class="form-group">
+        <label>Phone nunber:<input type="number" class="form-control" id="number-label" placeholder="phone number"required /></label>
+      </div>
+      <div class="form-group">
+        <label>Address:<input type="text" class="form-control" id="address-label" placeholder="Enter your address" required /></label>
+      </div>
+      <div class="form-group">
+        <label>Gender:</label>
+        <label>MALE<input type="radio" value="male" name="gender"></label>
+        <label>FEMALE<input type="radio" value="female" name="gender"></label>
+      </div>
+      <div class="form-group">
+        <label>Day Visited:<input type="date" id="day-label" class="form-control"></label>
+      </div>
+
+      <address></address>
+
+      <div class="form-group">
+          <p>Which option best describes your current role ?</p>
+          <select id="job" class="form-control"  required>
+            <option disabled selected value>Select current role</option>
+            <option value="full">Full Time Job</option>
+            <option value="part">Part Time Job</option>
+            <option value="student">Student</option>
+            <option value="prefer-not">Prefer not to say</option>
+            <option value="others">Others</option>
+          </select>
+      </div>
+      <div class="form-group">
+        <p>How did you hear about us ?</p>
+        <select id="views" class="form-control">
+          <option disabled selected value>Select One</option>
+          <option value="social">Social Media</option>
+          <option value="part">Friends and Family</option>
+          <option value="news-mag">Newsletters and Magzines</option>
+          <option value="google">Google Map</option>
+          <option value="others">Others</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <p>How satisfied were you with the level of care and treatment you received from the dentist ?</p>
+        <select id="satisfactory" class="form-control">
+          <option disabled selected value>Select One</option>
+          <option value="very-satisfied">Very Satisfied</option>
+          <option value="satisfied">Satisfied</option>
+          <option value="fairly">Fairly</option>
+          <option value="unsatisfied">Unsatisfied</option>
+          <option value="very-unsatisfied">Very Unsatisfied</option>
+        </select>
+      </div>
+      <div class="form-group">
+          <p>Would you like to recommend <strong>D' Dentist Place Clinic</strong> to your family, friends or relatives ?</p>
+          <label><input type="radio" value="yes" name="tick">YES</label>
+          <label><input type="radio" value="no"  name="tick">NO</label>
+          <label><input type="radio" value="not-sure"  name="tick">NOT SURE</label>
+      </div>
+    
+      <div class="form-group">
+        <p>Any comments or suggestions ?</p>
+        <textarea class="input-textarea" id="comments" placeholder="Enter your comments here..." rows="5" cols="20"></textarea>
+      </div><br> 
+
+      <div class="form-group">
+        <button type="submit" class="submit-button">Submit</button>
+      </div>
+
+
+      <footer class="footer">
+        &copy; <em id="date">2024</em> Stanley Meruo 
+      </footer>
+    
+    </form>
+       
+  </section>
+   
+  <script src="script.js"></script>
+ </body>
+</html>
